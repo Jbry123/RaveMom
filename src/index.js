@@ -2,9 +2,10 @@ import './css/index.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CSSTransitionGroup from 'react-addons-css-transition-group';
 
-import Hello from './components/Hello';
+import Header from './components/Header';
+import Content from './components/Content';
+import FooterView from './components/FooterView';
 
 const App = React.createClass({
   getInitialState() {
@@ -20,18 +21,14 @@ const App = React.createClass({
     // Lifecycle function that is triggered just before a component unmounts
   },
   render() {
-    const { animationName } = this.state;
     return (
-      <div>
-        <CSSTransitionGroup transitionName={ animationName }
-            transitionEnterTimeout={ 300 } transitionLeaveTimeout={ 300 }>
-            {/* Remove the below component and its children */}
-            {/* and replace with your own */}
-            <Hello />
-        </CSSTransitionGroup>
+            <div>
+            <Header></Header>
+            <Content></Content>
+            <FooterView></FooterView>
       </div>
     );
-  },
+  },  
 });
 
 ReactDOM.render(<App />, document.getElementById('app'));

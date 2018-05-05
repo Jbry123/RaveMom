@@ -5,7 +5,7 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default React.createClass({
 
-  displayName: 'RaveMom',
+  displayName: 'Message',
 
   propTypes: {
     message: React.PropTypes.string,
