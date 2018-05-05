@@ -3,7 +3,8 @@ import './css/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import HomeView from './components/HomeView';
+import Header from './components/Header';
+import Content from './components/Content';
 
 const App = React.createClass({
   getInitialState() {
@@ -20,7 +21,10 @@ const App = React.createClass({
   },
   render() {
     return (
-            <HomeView />
+            <div>
+            <Header></Header>
+            <Content></Content>
+            </div>
     );
   },  
 });
