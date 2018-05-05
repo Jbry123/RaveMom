@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import HomeView from './components/HomeView';
+import FooterView from './components/FooterView';
 
 const App = React.createClass({
   getInitialState() {
@@ -20,7 +21,10 @@ const App = React.createClass({
   },
   render() {
     return (
-            <HomeView />
+      <div>
+            <HomeView></HomeView>
+            <FooterView></FooterView>
+      </div>
     );
   },  
 });
