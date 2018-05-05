@@ -3,11 +3,8 @@ import './css/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
 import Header from './components/Header';
 import Content from './components/Content';
-
-import HomeView from './components/HomeView';
 import FooterView from './components/FooterView';
 
 const App = React.createClass({
